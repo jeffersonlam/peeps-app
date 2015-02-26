@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="peepsApp">
+<head>
+	<title>Peeps</title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body ng-controller="PeepController as peepCtrl">
+	<h1>Peeps</h1>
+	<div class="peep" ng-repeat="peep in peepCtrl.peeps">
+		<peep-main></peep-main>
+		<peep-info></peep-info>
+	</div>
+
+	<script text="text/javascript" src="js/angular.min.js"></script>
+	<script text="text/javascript" src="js/app.js"></script>
+	<script text="text/javascript" src="js/directives.js"></script>
+</body>
+</html>

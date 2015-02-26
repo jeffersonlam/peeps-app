@@ -1,0 +1,4 @@
+<div class="panel wall" ng-show="panelCtrl.isActive(3)">
+	<li ng-repeat="message in peep.messages"><span class="author">{{message.author}}</span><br>{{message.body}}</li>
+	<message-form></message-form>
+</div>

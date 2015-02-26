@@ -1,0 +1,86 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+	font-family: "Helvetica";
+}
+html, body{
+	width: 100%;
+	margin: 0;
+}
+a, a:visited{
+	color: black;
+	text-decoration: none;
+}
+.nav{
+	display: inline-block;
+	margin: 20px;
+}
+.nav li{
+	display: inline-block;
+	margin: 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.nav li.active{
+	background-color: #f2f2f2;
+}
+.nav li.active a{
+	color: rgb(21, 171, 232);
+}
+
+h1{
+	text-align: center;
+}
+.peep{
+	/*margin: 25px 0px;*/
+	padding: 25px 15px;
+	border-top: 1px solid gray;
+}
+.peep peep-main h3{
+	vertical-align: top;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
+.peep peep-main img{
+	margin: 0 auto;
+	display: block;
+}
+
+.panel.friends{
+	width: 100%;
+}
+.panel.friends li{
+	list-style: none;
+	vertical-align: top;	
+	margin: 0 auto;
+}
+.panel.wall{
+	margin: 0 auto;
+	width: 90%;
+}
+.panel.wall li{
+	list-style: none;
+	margin: 10px 0px;
+}
+.panel.wall li:nth-child(even){
+	background-color: whitesmoke;
+}
+.panel.wall .author{
+	color: gray;
+}
+
+form{
+	text-align: center;
+}
+
+input[type=text]{
+	box-shadow: none;
+	border: 1px solid gray;
+	font-size: 12pt;
+}
+
+.ng-dirty.ng-invalid{
+	border-color: red;
+}
+.ng-dirty.ng-valid{
+	border-color: green;
+}
