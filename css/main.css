@@ -1,0 +1,118 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+	font-family: "Helvetica";
+}
+html, body{
+	width: 100%;
+	margin: 0;
+}
+a, a:visited{
+	color: black;
+	text-decoration: none;
+}
+.nav{
+	display: block;
+	/*margin: 20px;*/
+	width: 238px;
+	margin: 20px auto;
+}
+.nav li{
+	display: inline-block;
+	margin: 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.nav li.active{
+	background-color: #f2f2f2;
+}
+.nav li.active a{
+	color: rgb(21, 171, 232);
+}
+
+h1{
+	text-align: center;
+}
+.peep{
+	/*margin: 25px 0px;*/
+	padding: 25px 15px;
+	border-top: 1px solid gray;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.peep peep-main h3{
+	vertical-align: top;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
+.peep peep-main img{
+	margin: 0 auto;
+	display: block;
+}
+.peep:last-child{
+	min-height: 500px;
+}
+
+.panel.friends{
+	width: 100%;
+}
+.panel.friends li{
+	list-style: none;
+	vertical-align: top;	
+	margin: 0 auto;
+}
+.panel.wall{
+	margin: 0 auto;
+	width: 90%;
+}
+.panel.wall li.message{
+	list-style: none;
+	margin: 10px 0px;
+}
+.panel.wall li.message:nth-child(even){
+	background-color: whitesmoke;
+}
+.panel.wall .author{
+	color: gray;
+}
+
+form label{
+	font-size: 10pt;
+	width: 25%;
+	display: inline-block;
+}
+
+input[type=text]{
+	box-shadow: none;
+	border: 1px solid gray;
+	font-size: 12pt;
+	display: inline-block;
+	width: 75%;
+}
+
+message-form form li{
+	list-style: none;
+	margin: 5px 0px;
+	width: 100%;
+}
+message-form form input[type=submit]{
+	border-radius: 0px;
+	border: 1px solid black;
+	box-shadow: none;
+	background-color: white;
+	padding: 5px;
+}
+
+.ng-dirty.ng-invalid{
+	border-color: red;
+}
+.ng-dirty.ng-valid{
+	border-color: green;
+}
+.pull-right{
+	float: right;
+}
+form::after{
+	content:"";
+	display:table;
+	clear:both;
+}

@@ -1,0 +1,5 @@
+<form name="msgForm" ng-submit="msgForm.$valid && messageCtrl.newMessage(msgForm, peep)" novalidate>
+	<li><label>Name</label><input ng-model="messageCtrl.msg.author" type="text" required/></li>
+	<li><label>Message</label><input ng-model="messageCtrl.msg.body" type="text" required/></li>
+	<li><input class="pull-right" type="submit" /></li>
+</form>
